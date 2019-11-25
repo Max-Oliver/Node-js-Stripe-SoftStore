@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <img src="SystemBox.png" alt="Sofware System" class="card-img-top">
+            <div class="card-body">
+                <h2>
+                    30 $
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eligendi voluptatum excepturi labore saepe aliquam?
+                    Maiores nesciunt dolor provident pariatur!
+                    Deleniti fugit aspernatur autem, perspiciatis ea aperiam laborum in et dolore.
+                </p>
+            </div>
+            <div class='card-footer'>
+                <form action="/checkout" method='POST'>
+
+                    <script src='https://checkout.stripe.com/checkout.js' class='stripe-button' data-key="PUBLIC_KEY"
+                        data-amount="3000" data-name="ZeroByOne SoftStore" data-description="Software Store"
+                        data-image="https://cdn.dribbble.com/users/1058959/screenshots/3590523/dribbble_juni_8.png"
+                        data-locale="auto">
+                        </script>
+
+                    <script>
+                        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                    </script>
+                    <button class="btn btn-dark btn-block">
+                        Buy <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
